@@ -7,10 +7,14 @@ r_value = r(1,2);
 
 threshold_value = bsp(x,y);
 
-if r_value > threshold_value
+if abs(r_value) > abs(threshold_value)
+    r_value
+    threshold_value
     ['accept it']
 end
-if r_value <= threshold_value
+if (r_value) <= abs(threshold_value)
+     r_value
+     threshold_value
      ['reject it']
 end
 
